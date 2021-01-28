@@ -34,7 +34,13 @@ export default function Home() {
   return (
     <>
     <Head>
+      <title>Star Wars Quiz</title>
+      <meta name="title" content="Star Wars Quiz"/>
 
+      <meta property="og:type"  content="website" />
+      <meta property="og:url"   content="https://starwars-quiz.souuzaaa.vercel.app/" />
+      <meta property="og:title" content="Star Wars Quiz"/>
+      <meta property="og:image" content={db.bg} />
     </Head>
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
