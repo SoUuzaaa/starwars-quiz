@@ -40,7 +40,14 @@ export default function Home() {
       <meta property="og:type"  content="website" />
       <meta property="og:url"   content="https://starwars-quiz.souuzaaa.vercel.app/" />
       <meta property="og:title" content="Star Wars Quiz"/>
+      <meta property="og:description" content="Teste seu conhecimento sobre o universo star wars!!"/>
       <meta property="og:image" content={db.bg} />
+
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:url" content="https://starwars-quiz.souuzaaa.vercel.app/"/>
+      <meta property="twitter:title" content="Star Wars Quiz"/>
+      <meta property="twitter:description" content="Teste seu conhecimento sobre o universo star wars!!"/>
+      <meta property="twitter:image" content={db.bg}/>
     </Head>
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
