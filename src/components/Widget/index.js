@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
 margin-top: 24px;
@@ -15,6 +15,7 @@ h1, h2, h3 {
   margin-bottom: 0;
 }
 p {
+  margin: 0 0 20px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -22,7 +23,28 @@ p {
 button {
   width: 100%;
 }
-`
+.inputName {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+  outline: 0;
+  border: 1px solid #801313;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.buttonQuiz {
+  margin-top: 25px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  outline: 0;
+  background: #2E2E2E;
+  padding: 10px;
+}
+`;
 
 Widget.Header = styled.header`
 display: flex;
@@ -34,18 +56,7 @@ background-color: ${({ theme }) => theme.colors.primary};
 * {
   margin: 0;
 }
-`
-
-Widget.Input = styled.input`
-  width: 100%;
-  font-size: 15px;
-  color: white;
-  padding: 10px;
-  outline: 0;
-  border: 1px solid #801313;
-  border-radius: 5px;
-  background-color: transparent;
-`
+`;
 
 Widget.Content = styled.header`
 padding: 24px 32px 32px 32px;
@@ -58,7 +69,7 @@ padding: 24px 32px 32px 32px;
 ul {
   list-style: none;
   padding: 0;
-}
-`
+};
+`;
 
 export default Widget;
