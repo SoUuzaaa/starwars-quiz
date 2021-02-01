@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 /* eslint-disable func-names */
 import React from 'react';
 import styled from 'styled-components';
@@ -10,6 +11,8 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 // npm run dev
 
@@ -19,7 +22,7 @@ import QuizLogo from '../src/components/QuizLogo';
   background-size: cover;
   background-position: center;
 ` */
-export const QuizContainer = styled.div`
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -67,18 +70,15 @@ export default function Home() {
               }}
               >
                 <p>{db.description}</p>
-                <input
-                  className="inputName"
-                  placeholder="Diz ai seu nome"
-                  onChange={function (infosDoEvento) {
-                    setName(infosDoEvento.target.value);
-                  }}
+                <Input
+                  name="nomeDoUsuario"
+                  onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                  placeholder="Diz ai seu nome :)"
+                  value={name}
                 />
-                <button className="buttonQuiz" type="submit" disabled={name.length === 0}>
-                  JOGAR
-                  {' '}
-                  {name}
-                </button>
+                <Button type="submit" disabled={name.length === 0}>
+                  {`Jogar ${name}`}
+                </Button>
               </form>
             </Widget.Content>
           </Widget>

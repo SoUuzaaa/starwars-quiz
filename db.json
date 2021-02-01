@@ -4,25 +4,25 @@
     "description": "Veremos através desse quiz o quanto você sabe sobre a força e o universo Star Wars...",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://i.imgur.com/VtNDoXY.gif",
+        "title": "Qual o nome do personagem?",
+        "description": "Se errar essa saia do quiz imediatamente.",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Yoda",
+          "Baby Yoda",
+          "Grogu",
+          "Yaddle"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://steamuserimages-a.akamaihd.net/ugc/428193628093094958/800E412D0C9F2F369E223CE2B42F53C54433FFE9/",
+        "title": "Como Darth Vader morreu?",
+        "description": "Fácil demais",
+        "answer": 1,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Luke o matou em um duelo e se juntou ao lado sombrio da força com Sidious",
+           "Sidious usou o Force Lightning em Vader e deixou enfraquecido e danificando a armadura de Vader."
         ]
       }
     ],

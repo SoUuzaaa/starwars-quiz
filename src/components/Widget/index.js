@@ -15,34 +15,12 @@ h1, h2, h3 {
   margin-bottom: 0;
 }
 p {
-  margin: 0 0 20px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
 }
 button {
   width: 100%;
-}
-.inputName {
-  width: 100%;
-  font-size: 15px;
-  font-weight: 700;
-  color: white;
-  padding: 15px;
-  outline: 0;
-  border: 1px solid #801313;
-  border-radius: 5px;
-  background-color: transparent;
-}
-.buttonQuiz {
-  margin-top: 25px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  outline: 0;
-  background: #2E2E2E;
-  padding: 10px;
 }
 `;
 
@@ -70,6 +48,24 @@ ul {
   list-style: none;
   padding: 0;
 };
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
 `;
 
 export default Widget;
